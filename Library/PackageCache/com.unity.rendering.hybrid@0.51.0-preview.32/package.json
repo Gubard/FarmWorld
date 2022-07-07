@@ -1,0 +1,28 @@
+{
+  "name": "com.unity.rendering.hybrid",
+  "displayName": "Hybrid Renderer",
+  "version": "0.51.0-preview.32",
+  "unity": "2020.3",
+  "unityRelease": "0f1",
+  "description": "The Hybrid Rendering package provides systems and components for drawing meshes using DOTS, including support for instanced mesh rendering and LOD.",
+  "dependencies": {
+    "com.unity.entities": "0.51.0-preview.32"
+  },
+  "keywords": [
+    "dots",
+    "hybrid",
+    "rendering",
+    "unity"
+  ],
+  "upm": {
+    "changelog": "### Changed\n\n* Package Dependencies\n  * `com.unity.entities` to version  `0.51.0`\n\n### Fixed\n\n* Fixed a bug where specular reflections would become black regardless of intensity settings"
+  },
+  "upmCi": {
+    "footprint": "311f268119af3ee2e5d08cc0580f1879c4239a29"
+  },
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/dots.git",
+    "type": "git",
+    "revision": "469d2b30300a7ff2c2b15f72ee8613e374c37b63"
+  }
+}
