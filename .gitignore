@@ -2,6 +2,7 @@
 obj/
 *~
 .*/
+*.cs.meta
 *.user
 *.csproj
 *.sln
