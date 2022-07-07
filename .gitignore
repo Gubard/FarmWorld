@@ -3,5 +3,9 @@ obj/
 *~
 .*/
 *.user
+*.csproj
+*.sln
 Logs/
 Temp/
+Library/
+UserSettings/
