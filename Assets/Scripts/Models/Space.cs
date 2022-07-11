@@ -18,8 +18,8 @@ namespace Models
         public Space(Plane3D plane, Vector2 centerOffset, Degree rotatePlane)
         {
             Options = new SpaceOptions(plane, centerOffset, rotatePlane);
-            var pointRight = Float3Constants.Right + Options.Center;
-            var pointForward = Float3Constants.Forward + Options.Center;
+            var pointRight = math.right() + Options.Center;
+            var pointForward = math.forward() + Options.Center;
             var xAxisPoint = Options.ProjectOnPlane(pointRight);
             var yAxisPoint = Options.ProjectOnPlane(pointForward);
             XAxis = new Straight(Options.WorldCenter, xAxisPoint);

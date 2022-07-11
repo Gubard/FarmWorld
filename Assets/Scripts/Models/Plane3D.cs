@@ -1,4 +1,3 @@
-using Constants;
 using Extensions;
 using Unity.Mathematics;
 using UnityEngine;
@@ -7,7 +6,7 @@ namespace Models
 {
     public readonly struct Plane3D
     {
-        public static readonly Plane3D XZ = new(Float3Constants.Up, float3.zero);
+        public static readonly Plane3D XZ = new(math.up(), float3.zero);
 
         public readonly float Distance;
         public readonly Normal3D Normal;

@@ -22,7 +22,7 @@ namespace Models
             RotatePlane = rotatePlane;
             Center = new float3(centerOffset.x, 0, centerOffset.y);
             WorldCenter = Center.ProjectOnPlane(Plane.Normal);
-            RotateNormal = new Straight(Center, Float3Constants.Up + Center);
+            RotateNormal = new Straight(Center, math.up() + Center);
         }
 
         public float3 ProjectOnPlane(float3 vector3)

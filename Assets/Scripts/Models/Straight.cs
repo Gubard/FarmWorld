@@ -6,9 +6,9 @@ namespace Models
 {
     public readonly struct Straight
     {
-        public static readonly Straight X = new(float3.zero, Float3Constants.Right);
-        public static readonly Straight Y = new(float3.zero, Float3Constants.Up);
-        public static readonly Straight Z = new(float3.zero, Float3Constants.Forward);
+        public static readonly Straight X = new(float3.zero, math.right());
+        public static readonly Straight Y = new(float3.zero, math.up());
+        public static readonly Straight Z = new(float3.zero, math.forward());
 
         public StraightOptions Options { get; }
         public Normal3D Normal { get; }

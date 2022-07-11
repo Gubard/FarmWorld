@@ -46,6 +46,7 @@ namespace MonoBehaviours
                     MonoBehaviourInject.Injector.Resolve<MainCameraGameUnit>(),
                     MonoBehaviourInject.Injector.Resolve<MainLightGameUnit>()
                 })
+                .RegisterSingleton<IDictionary<string, EntityArchetype>>()
                 .Reserve<MainCameraGameUnit>("Main Camera",
                     new TransformOptionsBuilder().SetRotation(rotation)
                         .SetPosition(position)

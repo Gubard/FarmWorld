@@ -9,9 +9,9 @@ namespace Constants
         public const string JonathanFoustFolderName = "Jonathan Foust";
         public const string MeshesFolderName = "Meshes";
         public const string MaterialsFolderName = "Materials";
-        public static readonly DirectoryRelativePath AssetsPath = new DirectoryRelativePath(AssetsFolderName);
+        public static readonly DirectoryRelativePath AssetsPath = new (AssetsFolderName);
         public static readonly DirectoryRelativePath MaterialsDirectory = AssetsPath.Combine(MaterialsFolderName);
-        
+
         public static readonly DirectoryRelativePath JonathanFoustAssetsDirectory =
             AssetsPath.Combine(JonathanFoustFolderName);
 
